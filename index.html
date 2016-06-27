@@ -1,0 +1,46 @@
+<html>
+<title>URG Trial Store - Add Product To Store</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<head>
+<style>
+#formtable {
+    background-color: #FFFFBB;
+    font: 11px arial, sans-serif;
+}
+</style>
+<script type="text/javascript" src=formval.js>
+</script>
+</head>
+<body>
+<h2>ADD NEW PRODUCT</h2>
+<form action="create_product.php" method="Post" name="frmAddProduct" onsubmit="return validate();">
+<table border="0" cellpadding="5" cellspacing="0" id="formtable">
+	<tbody>
+		<tr>
+			<td>Product Name:</td>
+			<td><input name="Product_Name" size="50" type="edit" value="" /></td>
+		</tr>
+		<tr>
+			<td>Description:</td>
+			<td><textarea cols="30" name="Description" rows="7"></textarea></td>
+		</tr>
+		<tr>
+			<td>SKU (Stock Keeping Unit):</td>
+			<td><input name="SKU" size="20" type="edit" value="" /></td>
+		</tr>
+		<tr>
+			<td>Price (GBP):</td>
+			<td><input name="Price" size="20" type="edit" value="" /></td>
+		</tr>
+		<tr>
+			<td>Shipping Weight (lb):</td>
+			<td><input name="Shipping_Weight" size="20" type="edit" value="" /></td>
+		</tr>
+		<tr>
+			<td align="center"><input name="Reset" type="reset" value="Reset" /></td>
+			<td align="center"><input name="Submit" type="submit" value="Submit" /></td>
+		</tr>
+	</tbody>
+</table>
+</form>
+</body></html>
