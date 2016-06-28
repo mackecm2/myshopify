@@ -28,11 +28,15 @@
                                                 "weight" => $_POST['Shipping_Weight'],
                                                 "weight_unit" => "lb"
 					)
-				)
+				),
+				"images" => array
+				(
+                                        "attachment" => preg_replace('#^data:image/\w+;base64,#i', '', $_POST['ImageFileName']."==\n")
+				),
 			)
 		));
-# $product['id']
-		print_r($product['title']." has been successfully added.");
+
+		print_r($product['title']." has been successfully added. Click <a href=index.html>here</a> to add another product.");
 	}
 	catch (shopify\ApiException $e)
 	{
